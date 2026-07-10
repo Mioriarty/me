@@ -1,10 +1,11 @@
-function Entry({ title, when, body }) {
+function Entry({ title, subtitle, when, body }) {
   return (
     <div className="entry">
       <div className="entry-head">
         <h4>{title}</h4>
         <span className="when">{when}</span>
       </div>
+      {subtitle && <p className="subtitle">{subtitle}</p>}
       <p>{body}</p>
     </div>
   )

@@ -214,6 +214,13 @@ section.front {
   padding: 18px 0;
   border-top: 1px solid var(--rule);
 }
+
+.entry .subtitle {
+  margin-top: 0px;
+  font-style: italic;
+  font-size: 13px;
+}
+
 .entry:first-of-type {
   border-top: none;
   padding-top: 0;
