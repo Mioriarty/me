@@ -1,4 +1,4 @@
-# personal-site
+# Me
 
 A newspaper-style personal site built with React + Vite.
 
