@@ -9,7 +9,7 @@ function rotateLetter(character: string, shift: number): string {
   }
 
   if (code >= 97 && code <= 122) {
-    const base = 97; 
+    const base = 97;
     return String.fromCharCode(((code - base + shift + 26) % 26) + base);
   }
 
