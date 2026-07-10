@@ -2,6 +2,8 @@
 // Edit this file to update your content — you should never need
 // to touch the component files just to change text.
 
+import { getMail } from "../scripts/mail";
+
 export const site = {
   name: "Moritz Seppelt",
   tagline: "On Software, Sound, and the Space Between",
@@ -60,14 +62,14 @@ export const compositionSection = {
   accent: "mus",
   entries: [
     {
-      title: "[Piece Title], for [instrumentation]",
+      title: "Gute Zeiten, gute Zeiten, for 2 flutes, 2 violins, viola, and cello",
       when: "2026",
-      body: "A brief program note: the idea behind the piece, its form, and where or by whom it was performed.",
+      body: "A short and easy sextett for amature musicians.",
     },
     {
-      title: "[Piece Title], for [instrumentation]",
+      title: "Sinfonische Dichtung, for a typical Symphony Orchestra",
       when: "2025",
-      body: "Program note — link to score, recording, or performance video.",
+      body: "My first symphonic piece. Composed for and performed by the Freie Orchester, Jena. Instrumentation:  2.2.2.2 – 4.2.2.1 – timp.perc, piano, strings",
     },
     {
       title: "[Piece Title], for [instrumentation]",
@@ -78,8 +80,7 @@ export const compositionSection = {
 };
 
 export const footerLinks = [
-  { label: "Email", href: "mailto:you@example.com" },
-  { label: "GitHub", href: "#" },
-  { label: "Scores / SoundCloud", href: "#" },
-  { label: "LinkedIn", href: "#" },
+  { label: "Email", href: "mailto:" + getMail() },
+  { label: "GitHub", href: "https://github.com/Mioriarty" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/moritz-seppelt-093777251/" },
 ];
