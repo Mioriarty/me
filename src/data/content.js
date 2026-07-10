@@ -3,7 +3,7 @@
 // to touch the component files just to change text.
 
 export const site = {
-  name: "Your Name",
+  name: "Moritz Seppelt",
   tagline: "On Software, Sound, and the Space Between",
   city: "Jena, Germany",
   volume: "Vol. I — Est. 2026",
