@@ -16,6 +16,7 @@ export const nav = [
   { label: "Research", href: "#research" },
   { label: "Compositions", href: "#compositions" },
   { label: "Projects", href: "#projects" },
+  { label: "Volunteering", href: "#volunteering" },
   { label: "CV", href: "#cv" },
   { label: "Contact", href: "#contact" },
 ];
@@ -27,7 +28,7 @@ export const lead = {
   paragraphs: [
     "I am a computer scientist with a B.Sc. in Applied Computer Science and an M.Sc. in Computer Science from Friedrich Schiller University Jena, where I finished with a thesis on why low-order models prevail in multivariate categorical distributions. In a life that runs in parallel rather than in sequence, I also compose: classical composition has become one of my strongest interests.",
     "The two pursuits share more than a desk. Counterpoint and control flow both reward patience with structure; a well-argued proof and a well-argued phrase both want to feel inevitable once you see them. This page is where both halves live, undivided.",
-    "On the science side, I am drawn to where theoretical computer science meets mathematics: probability and information theory, and the theory behind machine learning. For now, though, the desk is folded away — I am taking a gap year, travelling through Central and South America with my girlfriend. From summer 2027 on, I would like to continue with a PhD, ideally in Germany, Austria, or Switzerland.",
+    "On the science side, I am drawn to where theoretical computer science meets mathematics: probability and information theory, and the theory behind machine learning. For now, though, the desk is folded away — I am taking a gap year in Central and South America with my girlfriend, travelling and volunteering in many different places along the way. From summer 2027 on, I would like to continue with a PhD, ideally in Germany, Austria, or Switzerland.",
   ],
 };
 
@@ -123,8 +124,8 @@ export const compositionSection = {
 
 export const projectsSection = {
   id: "projects",
-  tag: "Section C — Personal Projects",
-  title: "Personal Projects",
+  tag: "Section C — Current Personal Projects",
+  title: "Current Personal Projects",
   subtitle: "Works in progress",
   intro: "Three side projects I am actively working on. All of them are openly vibe-coded, built largely together with AI coding assistants: partly because it is fun, and partly to stay on top of how software development is changing.",
   accent: "plain",
@@ -134,7 +135,7 @@ export const projectsSection = {
       title: "wandermäuse",
       subtitle: "Travel blog",
       when: "2026 –",
-      body: "The blog for our journey through Central and South America. Each entry shows the route so far on a map, then the music composed at that stop, then the story and photos. Self-hosted, without tracking or third-party services.",
+      body: "The blog for our year of travelling and volunteering in Central and South America. Each entry shows the route so far on a map, then the music composed at that stop, then the story and photos. Self-hosted, without tracking or third-party services.",
       links: [
         { label: "wandermaeuse.de", href: "https://wandermaeuse.de" },
         { label: "Code", href: "https://github.com/Mioriarty/wandermaeuse" },
@@ -160,9 +161,81 @@ export const projectsSection = {
   ],
 };
 
+export const volunteeringSection = {
+  id: "volunteering",
+  tag: "Section D — Volunteering",
+  title: "Volunteering",
+  subtitle: "Past, present, and planned",
+  groups: [
+    {
+      heading: "Central & South America, 2026 – 2027",
+      entries: [
+        {
+          title: "Self-Sufficient Community",
+          subtitle: "Yucatán, Mexico",
+          when: "2026",
+          body: "Volunteering in an almost self-sufficient community.",
+        },
+        {
+          title: "Au Pair",
+          subtitle: "Cabuya, Costa Rica",
+          when: "Nov 2026",
+        },
+        {
+          title: "Dental Assistant",
+          subtitle: "Various places in Bolivia",
+          when: "Mar 2027",
+        },
+        {
+          title: "Horse Farm",
+          subtitle: "Peru",
+          when: "Apr 2027",
+          body: "Helping on a farm that supports children with disabilities, including animal-assisted therapy.",
+        },
+      ],
+    },
+    {
+      heading: "Music",
+      entries: [
+        {
+          title: "Freies Orchester Jena",
+          when: "since 2024",
+          body: "Playing in the orchestra and helping organize its concerts and larger projects.",
+        },
+        {
+          title: "Chamber Music Group",
+          subtitle: "Jena",
+          body: "Arranging and composing pieces for the group, and increasingly taking care of its organization.",
+        },
+        {
+          title: "Orchestra Projects",
+          body: "Among others, a tour with the STÜBAphilharmonie and the band Deine Freunde, and projects with the Collegium Musicum Weimar.",
+        },
+      ],
+    },
+    {
+      heading: "Earlier",
+      entries: [
+        {
+          title: "Ecological Greenhouse",
+          subtitle: "Galicia, Spain",
+          when: "2025",
+          body: "Helping build an ecological greenhouse over the summer.",
+        },
+        {
+          title: "European Voluntary Service",
+          subtitle: "Litija, Slovenia",
+          when: "2019 – 2020",
+          body: "Assisting at a primary school (grades 1 to 9) and a youth centre, where I started a programming course. Now and then I accompanied a pupils' choir.",
+        },
+      ],
+    },
+  ],
+};
+
 export const cvSection = {
   id: "cv",
-  tag: "Section D — Curriculum Vitae",
+  tag: "Section E — Curriculum Vitae",
   title: "Curriculum Vitae",
   subtitle: "The record, in brief",
   groups: [
@@ -172,14 +245,20 @@ export const cvSection = {
         {
           title: "M.Sc. Computer Science",
           subtitle: "Friedrich Schiller University Jena",
-          when: "2026",
+          when: "2023 – 2026",
           body: "Final grade 1.0. Thesis: “Why Low-Order Models Prevail in Multivariate Categorical Distributions” (1.0).",
         },
         {
           title: "B.Sc. Applied Computer Science",
           subtitle: "Friedrich Schiller University Jena",
-          when: "2024",
-          body: "Final grade 1.0. Thesis: “Reducing Integer Linear Programs to Shortest Path Problems”.",
+          when: "2020 – 2024",
+          body: "Final grade 1.0. Thesis: “Reducing Integer Linear Programs to Shortest Path Problems” (1.0).",
+        },
+        {
+          title: "Training as a Systemic Coach",
+          subtitle: "System Worx, Munich",
+          when: "2022 – 2023",
+          body: "Coaching, team development, and organizational development.",
         },
       ],
     },
@@ -187,17 +266,28 @@ export const cvSection = {
       heading: "Experience",
       entries: [
         {
+          title: "Web Development",
+          subtitle: "Gerda-Taro-Schule, Leipzig",
+          when: "since 2017",
+          body: "Developing and maintaining the school's website for its extracurricular activities, such as course choices and attendance. Started as a team effort; I now run it on my own. (React, PHP, MySQL)",
+        },
+        {
           title: "Internship, IT Security",
-          subtitle: "Accenture",
+          subtitle: "Accenture, Vienna",
+          when: "2023 – 2024",
+          body: "Four months in IT security, contributing to security assessments.",
         },
         {
           title: "Mathematics Tutor",
-          body: "Tutoring in mathematics, including linear algebra and numerical analysis.",
+          subtitle: "Friedrich Schiller University Jena",
+          when: "2021 – 2023",
+          body: "Tutorials in linear algebra and numerical analysis for first- and fourth-semester students.",
         },
         {
-          title: "Software Development",
-          when: "since 2017",
-          body: "From early game projects in C# and C++ to web apps in TypeScript and machine learning and computer vision in Python.",
+          title: "Web Development",
+          subtitle: "City of Leipzig",
+          when: "2021",
+          body: "A web application for the city's central technical management to manage building information and plan caretakers and technical staff. (JavaScript, PHP, MySQL)",
         },
       ],
     },
@@ -205,8 +295,17 @@ export const cvSection = {
       heading: "Awards & Grants",
       entries: [
         {
-          title: "Hackathon Wins",
-          body: "Two hackathon wins, most recently HackHPI 2026 with Traktoros.",
+          title: "Winner, HackHPI",
+          subtitle: "Hasso Plattner Institute, Potsdam",
+          when: "2026",
+          body: "Detecting people and other obstacles in tractor camera images with AI-based and classical methods (Traktoros, see above).",
+        },
+        {
+          title: "Winner, Ocean Re-Creation Challenge",
+          subtitle: "Trans-Mar-Tech, Kiel",
+          when: "2022",
+          body: "In an international student team at a one-week hackathon, we built software that automatically detects ghost nets (lost fishing nets on the seabed) in side-scan sonar data using classical computer vision. We later improved it with machine learning (Oct 2022 – Apr 2023).",
+          link: { label: "Code", href: "https://github.com/Mioriarty/smarte_geisternetze" },
         },
         {
           title: "Honours Year Grant",
@@ -228,6 +327,24 @@ export const cvSection = {
       ],
     },
     {
+      heading: "Skills & Languages",
+      entries: [
+        {
+          title: "Programming",
+          body: "Very good: Python, React, JavaScript, C++, Java. Good: C#, Unity, PHP. Experience with computer vision and machine learning.",
+        },
+        {
+          title: "Languages",
+          body: "German — native. English — B2. Spanish — B1, currently learning while travelling and volunteering in Central and South America.",
+        },
+        {
+          title: "Abroad",
+          body: "Student exchanges to Brattleboro, Vermont, USA (2017) and Henrichemont, France (2015). My year in Slovenia is listed under Volunteering.",
+          link: { label: "Volunteering", href: "#volunteering" },
+        },
+      ],
+    },
+    {
       heading: "Music",
       entries: [
         {
@@ -240,7 +357,7 @@ export const cvSection = {
         },
         {
           title: "Jugend musiziert",
-          body: "Four participations.",
+          body: "Four participations: 2010, 2012, 2015, and 2019.",
         },
         {
           title: "Composition",

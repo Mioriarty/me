@@ -17,7 +17,7 @@ src/
     Seam.jsx              — the signature divider (code brackets → staff ticks)
     SectionFront.jsx       — reusable block, used once for Research, once
                              for Compositions
-    CVSection.jsx          — full-width CV, grouped into short columns
+    CVSection.jsx          — full-width grouped columns (Volunteering, CV)
     Entry.jsx              — one dated item, shared by the sections above
     Footer.jsx              — contact links
 ```

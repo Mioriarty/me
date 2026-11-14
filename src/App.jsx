@@ -14,6 +14,7 @@ import {
   researchSection,
   compositionSection,
   projectsSection,
+  volunteeringSection,
   cvSection,
   footerLinks,
 } from './data/content.js'
@@ -36,6 +37,7 @@ export default function App() {
         </div>
 
         <SectionFront {...projectsSection} />
+        <CVSection {...volunteeringSection} />
         <CVSection {...cvSection} />
       </main>
 

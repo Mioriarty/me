@@ -1,7 +1,7 @@
 import Entry from './Entry.jsx'
 
-// Full-width section below the two fronts: the CV, set in short
-// grouped columns like a newspaper's listings page.
+// Full-width section set in short grouped columns, like a newspaper's
+// listings page. Used for Volunteering and the CV.
 export default function CVSection({ id, tag, title, subtitle, groups }) {
   return (
     <section id={id} className="front cv">
