@@ -1,10 +1,12 @@
+import { newTabProps } from '../scripts/links.js'
+
 export default function Footer({ links }) {
   return (
     <footer id="contact">
       <div className="wrap">
         <div className="links">
           {links.map((link) => (
-            <a key={link.label} href={link.href}>
+            <a key={link.label} href={link.href} {...newTabProps(link.href)}>
               {link.label}
             </a>
           ))}

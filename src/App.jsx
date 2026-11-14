@@ -4,6 +4,7 @@ import MainNav from './components/MainNav.jsx'
 import LeadStory from './components/LeadStory.jsx'
 import Seam from './components/Seam.jsx'
 import SectionFront from './components/SectionFront.jsx'
+import CVSection from './components/CVSection.jsx'
 import Footer from './components/Footer.jsx'
 
 import {
@@ -12,6 +13,8 @@ import {
   lead,
   researchSection,
   compositionSection,
+  projectsSection,
+  cvSection,
   footerLinks,
 } from './data/content.js'
 
@@ -31,6 +34,9 @@ export default function App() {
           <div className="section-divider-col" />
           <SectionFront {...compositionSection} />
         </div>
+
+        <SectionFront {...projectsSection} />
+        <CVSection {...cvSection} />
       </main>
 
       <Footer links={footerLinks} />

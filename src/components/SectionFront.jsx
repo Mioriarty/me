@@ -1,27 +1,18 @@
-function Entry({ title, subtitle, when, body }) {
-  return (
-    <div className="entry">
-      <div className="entry-head">
-        <h4>{title}</h4>
-        <span className="when">{when}</span>
-      </div>
-      {subtitle && <p className="subtitle">{subtitle}</p>}
-      <p>{body}</p>
-    </div>
-  )
-}
+import Entry from './Entry.jsx'
 
-// One component, used twice (Research and Compositions) with different
-// data and an `accent` of "cs" or "mus" to pick up the right color token.
-export default function SectionFront({ id, tag, title, subtitle, accent, entries }) {
+// One component, used for Research, Compositions and Projects with
+// different data and an `accent` ("cs", "mus" or "plain") to pick up the
+// right color token. `layout: "grid"` sets the entries side by side for a
+// full-width section; `intro` is an optional short paragraph under the title.
+export default function SectionFront({ id, tag, title, subtitle, intro, accent, layout, entries }) {
+  const items = entries.map((entry, i) => <Entry key={i} {...entry} />)
   return (
-    <section id={id} className={`front ${accent}`}>
+    <section id={id} className={`front ${accent}${layout === 'grid' ? ' wide' : ''}`}>
       <span className="tag">{tag}</span>
       <h3>{title}</h3>
       <p className="sub">{subtitle}</p>
-      {entries.map((entry, i) => (
-        <Entry key={i} {...entry} />
-      ))}
+      {intro && <p className="intro">{intro}</p>}
+      {layout === 'grid' ? <div className="entry-grid">{items}</div> : items}
     </section>
   )
 }
