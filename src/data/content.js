@@ -62,7 +62,7 @@ export const researchSection = {
     },
     {
       title: "Bachelor's Thesis: Reducing Integer Linear Programs to Shortest Path Problems",
-      subtitle: "B.Sc. Applied Computer Science, Friedrich Schiller University Jena",
+      subtitle: "B.Sc. Applied Computer Science, Friedrich Schiller University Jena — graded 1.0, supervised by Prof. Joachim Giesen",
       when: "2024",
       body: "Revisits a method from Pachter and Sturmfels' Algebraic Statistics for Computational Biology that solves certain integer linear programs as shortest path problems on weighted graphs, and extends it from constraint matrices with equal column sums to ones whose column sums only need to be strictly positive.",
       link: { label: "Source", href: "https://github.com/Mioriarty/bachelor-thesis" },
