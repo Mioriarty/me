@@ -269,12 +269,12 @@ export const cvSection = {
           title: "Web Development",
           subtitle: "Gerda-Taro-Schule, Leipzig",
           when: "since 2017",
-          body: "Developing and maintaining the school's website for its extracurricular activities, such as course choices and attendance. Started as a team effort; I now run it on my own. (React, PHP, MySQL)",
+          body: "Developing and maintaining the school's website for its extracurricular activities, such as course choices and attendance. Started as a team effort while I was still at school; I now run it on my own. (React, PHP, MySQL)",
         },
         {
           title: "Internship, IT Security",
           subtitle: "Accenture, Vienna",
-          when: "2023 – 2024",
+          when: "Oct 2023 – Jan 2024",
           body: "Four months in IT security, contributing to security assessments.",
         },
         {
@@ -335,7 +335,7 @@ export const cvSection = {
         },
         {
           title: "Languages",
-          body: "German — native. English — B2. Spanish — B1, currently learning while travelling and volunteering in Central and South America.",
+          body: "German — native. English — C1. Spanish — B1, currently learning while travelling and volunteering in Central and South America.",
         },
         {
           title: "Abroad",
