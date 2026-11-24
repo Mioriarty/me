@@ -309,6 +309,7 @@ export const cvSection = {
         },
         {
           title: "Honours Year Grant",
+          when: "2025",
           body: "A grant for a proposed Honours Year research project, planned as a precursor to my Master's thesis. It did not develop into an independent, completed research project.",
         },
       ],
