@@ -260,6 +260,12 @@ export const cvSection = {
           when: "2022 – 2023",
           body: "Coaching, team development, and organizational development.",
         },
+        {
+          title: "Abitur",
+          subtitle: "Friedrich-Schiller-Schule, Leipzig",
+          when: "2019",
+          body: "German university entrance qualification. Final grade 1.1.",
+        },
       ],
     },
     {
